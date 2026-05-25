@@ -671,7 +671,17 @@ gap:10px;
 .row input{
 width:100%;
 }
+/* إخفاء أيقونة التاريخ */
+input[type="date"]::-webkit-calendar-picker-indicator{
+opacity:0;
+cursor:pointer;
+}
 
+/* إخفاء أيقونة الوقت */
+input[type="time"]::-webkit-calendar-picker-indicator{
+opacity:0;
+cursor:pointer;
+}
 /* تصغير ارتفاع textarea */
 .booking-form textarea{
 min-height:80px;
